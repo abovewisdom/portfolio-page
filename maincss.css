@@ -1,18 +1,27 @@
-
-:root { /*For larger screens*/
-  --menu-float: left;
-  --menu-position: fixed;
-  --content-float: right;
+:root { /*For variables*/
+--menu-float: left;
+--menu-position: fixed;
+--content-float: right;
 }
 @media (max-width: 600px){ 
-  :root{
-    --menu-float: none;
-    --menu-position: static;
-    --content-float: none;
-  }}
-body { /*For smaller screents*/
-  align-content: start;
-  margin: auto;
-  font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+:root{
+  --menu-float: none;
+  --menu-position: static;
+  --content-float: none;
+}}
+body { /*Main content goes here*/
+background-color: orange;
+font-family: 'Open Sans', sans-serif;
+}
+header {
+background-color: #27587c;
+height: 10vw;
+}
+main {
+background-color: white;
+height: 80vw;
+}
+footer {
+background-color: #27587c;
+height: 10vw;
 }

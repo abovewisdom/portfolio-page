@@ -1,27 +1,49 @@
 :root { /*For variables*/
---menu-float: left;
---menu-position: fixed;
---content-float: right;
+  --menu-float: left;
+  --menu-position: fixed;
+  --content-float: right;
 }
 @media (max-width: 600px){ 
-:root{
-  --menu-float: none;
-  --menu-position: static;
-  --content-float: none;
-}}
+ :root{
+   --menu-float: none;
+   --menu-position: static;
+   --content-float: none;
+  }
+}
 body { /*Main content goes here*/
-background-color: orange;
-font-family: 'Open Sans', sans-serif;
+  background-color: orange;
+  font-family: 'Open Sans', sans-serif;
 }
 header {
-background-color: #27587c;
-height: 10vw;
+  /*background-color: #27587c;*/
+  height: 10vw;
+  display: flex; /*added to layout text*/
+  justify-content: flex-end; /*text layout(bottom)*/
+  flex-direction: column; 
+}
+hr { /*defines how line on page will appear*/
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}
+h1 {
+  font-size: 2em;
 }
 main {
-background-color: white;
-height: 80vw;
+  background-color: white;
+  height: 80vw;
 }
 footer {
-background-color: #27587c;
-height: 10vw;
+  background-color: #27587c;
+  height: 10vw;
 }

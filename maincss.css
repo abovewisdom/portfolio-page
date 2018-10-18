@@ -42,7 +42,24 @@ h1 {
 main {
   background-color: white;
   height: 80vw;
+  display: grid;
+  align-content: start;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
+  .project1{background:LightSkyBlue;}
+  .project2{background:LightSalmon;}
+  .project3{background:PaleTurquoise;}
+  .project4{background:LightPink;}
+  .project5{background:PaleGreen;}
+
+  .projtile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 footer {
   background-color: #27587c;
   height: 10vw;

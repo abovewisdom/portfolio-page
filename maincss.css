@@ -11,8 +11,10 @@
   }
 }
 body { /*Main content goes here*/
-  background-color: orange;
+  background-color: white ;
   font-family: 'Open Sans', sans-serif;
+  max-width: 1000px;
+  margin: auto;
 }
 header {
   /*background-color: #27587c;*/
@@ -51,18 +53,24 @@ main {
   .projectdesc{
     grid-column: 1/4; /*grid extends from first line to 4th across columns*/
     grid-row: 1/2;/*grid extends from first line to 2nd across rows*/
+    padding: 10px; /*add padding for text*/
   }
   .project1{background:LightSkyBlue;}
   .project2{background:LightSalmon;}
   .project3{background:PaleTurquoise;}
   .project4{background:LightPink;}
   .project5{background:PaleGreen;}
+  .project6{background: Purple;}
 
   .projtile{
     display:flex; /*using flex to center text*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .projtile:hover{
+  /*background-color:white;*/  
+  opacity: .6;
   }
 footer {
   background-color: #27587c;

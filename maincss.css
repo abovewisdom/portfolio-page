@@ -55,23 +55,33 @@ main {
     grid-row: 1/2;/*grid extends from first line to 2nd across rows*/
     padding: 10px; /*add padding for text*/
   }
-  .project1{background:LightSkyBlue;}
-  .project2{background:LightSalmon;}
-  .project3{background:PaleTurquoise;}
-  .project4{background:LightPink;}
-  .project5{background:PaleGreen;}
-  .project6{background: Purple;}
+  .projects{
+    grid-column: 1/4; /*grid extends from first line to 4th across columns*/
+    grid-row: 2/4; /*grid extends from second line to 4th across rows*/
+    padding: 5px;
+    display: grid; /*grid for project tiles*/
+    align-content: start;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+    .project1{background:LightSkyBlue;}
+    .project2{background:LightSalmon;}
+    .project3{background:PaleTurquoise;}
+    .project4{background:LightPink;}
+    .project5{background:PaleGreen;}
+    .project6{background: Purple;}
 
-  .projtile{
-    display:flex; /*using flex to center text*/
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .projtile:hover{
-  /*background-color:white;*/  
-  opacity: .6;
-  }
+      .projtile{
+        display:flex; /*using flex to center text*/
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .projtile:hover{
+      /*background-color:white;*/  
+      opacity: .6;
+      }
 footer {
   background-color: #27587c;
   height: 10vw;

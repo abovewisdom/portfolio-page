@@ -48,20 +48,19 @@ main {
   align-content: start;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr; /*grid layout using fr to easy size*/
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;/*minmax(50px, 20%) 1fr;*/
 }
   .projectdesc{
     grid-column: 1/4; /*grid extends from first line to 4th across columns*/
-    grid-row: 1/2;/*grid extends from first line to 2nd across rows*/
+    grid-row: 1/2; /*grid extends from first line to 2nd across rows*/
     padding: 10px; /*add padding for text*/
   }
   .projects{
     grid-column: 1/4; /*grid extends from first line to 4th across columns*/
     grid-row: 2/4; /*grid extends from second line to 4th across rows*/
-    padding: 5px;
     display: grid; /*grid for project tiles*/
     align-content: start;
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -70,7 +69,7 @@ main {
     .project3{background:PaleTurquoise;}
     .project4{background:LightPink;}
     .project5{background:PaleGreen;}
-    .project6{background: Purple;}
+    .project6{background: #CE45FF}
 
       .projtile{
         display:flex; /*using flex to center text*/

@@ -48,7 +48,7 @@ main {
   align-content: start;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr; /*grid layout using fr to easy size*/
-  grid-template-rows: 10% 90%;/*minmax(50px, 20%) 1fr;*/
+  grid-template-rows: repeat(2, [row] auto  );*/*minmax(50px, 20%) 1fr;*/
 }
   .projectdesc{
     grid-column: 1/4; /*grid extends from first line to 4th across columns*/
@@ -61,8 +61,10 @@ main {
     display: grid; /*grid for project tiles*/
     align-content: start;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    padding: 10px;
+    margin: auto;
   }
     .project1{background:LightSkyBlue;}
     .project2{background:LightSalmon;}
